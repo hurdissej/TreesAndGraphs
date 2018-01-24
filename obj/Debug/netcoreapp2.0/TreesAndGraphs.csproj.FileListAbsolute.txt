@@ -8,3 +8,13 @@
 /Users/hurdissej/dev/TreesAndGraphs/obj/Debug/netcoreapp2.0/TreesAndGraphs.AssemblyInfo.cs
 /Users/hurdissej/dev/TreesAndGraphs/obj/Debug/netcoreapp2.0/TreesAndGraphs.dll
 /Users/hurdissej/dev/TreesAndGraphs/obj/Debug/netcoreapp2.0/TreesAndGraphs.pdb
+c:\Code\treesAndGraphs\obj\Debug\netcoreapp2.0\TreesAndGraphs.csproj.CoreCompileInputs.cache
+c:\Code\treesAndGraphs\obj\Debug\netcoreapp2.0\TreesAndGraphs.AssemblyInfoInputs.cache
+c:\Code\treesAndGraphs\obj\Debug\netcoreapp2.0\TreesAndGraphs.AssemblyInfo.cs
+c:\Code\treesAndGraphs\obj\Debug\netcoreapp2.0\TreesAndGraphs.dll
+c:\Code\treesAndGraphs\obj\Debug\netcoreapp2.0\TreesAndGraphs.pdb
+c:\Code\treesAndGraphs\bin\Debug\netcoreapp2.0\TreesAndGraphs.deps.json
+c:\Code\treesAndGraphs\bin\Debug\netcoreapp2.0\TreesAndGraphs.runtimeconfig.json
+c:\Code\treesAndGraphs\bin\Debug\netcoreapp2.0\TreesAndGraphs.runtimeconfig.dev.json
+c:\Code\treesAndGraphs\bin\Debug\netcoreapp2.0\TreesAndGraphs.dll
+c:\Code\treesAndGraphs\bin\Debug\netcoreapp2.0\TreesAndGraphs.pdb
