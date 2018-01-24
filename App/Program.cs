@@ -60,6 +60,6 @@ class Solution {
         var one = dict.Contains(10); 
         var two = dict.Contains(90);
         var three = dict.Contains(1000001); 
-        System.Console.WriteLine($"Values found in hashset (sOrD) in: {stopwatch.ElapsedTicks}");
+        System.Console.WriteLine($"Values found in hashset (contains) in: {stopwatch.ElapsedTicks}");
     }
 }
