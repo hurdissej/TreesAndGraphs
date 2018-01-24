@@ -1,30 +1,59 @@
 using System;
 
+public class Node
+{
+    public int? value;
+    public Node left; 
+    public Node right; 
+}
+
 public class BinarySearchTree 
 {
-    public int value;
-    public BinarySearchTree left; 
-    public BinarySearchTree right; 
-    public BinarySearchTree(int[] values): this(values, 0){}
 
-    BinarySearchTree(int[] values, int index)
+    public BinarySearchTree(Node node, int[] values)
     {
-        CreateNode(this, index, values);
+
     }
 
-    public void CreateNode(BinarySearchTree root, int index, int[] values)
-    {
-        this.value = values[index];
-        if (index == values.Length-1)
-            return;
-        if (values[index + 1] < this.value)
+    public Node InsertNode(Node root, int v)
         {
-            this.left = new BinarySearchTree(values, index + 1);
-        } 
-        else 
-        {
-            this.right = new BinarySearchTree(values, index + 1);
+            if (root == null)
+            {
+                root = new Node();
+                root.value = v;
+            }
+            else if (v < root.value)
+            {
+                root.left = InsertNode(root.left, v);
+            }
+            else
+            {
+                root.right = InsertNode(root.right, v);
+            }
+
+            return root;
         }
+
+    public bool FindValue(Node root, int value)
+    {
+        if(root.value == value)
+            return true;
+
+        if(isLeaf(root))
+            return false;
+
+        if(value < root.value)
+            return FindValue(root.left, value);
+        
+        return FindValue(root.right, value);
+    }
+
+    public bool isLeaf(Node root)
+    {
+        if(root.left == null && root.right == null)
+            return true;
+
+        return false;
     }
 
 }
