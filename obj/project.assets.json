@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Code\\treesAndGraphs\\TreesAndGraphs.csproj",
+      "projectUniqueName": "C:\\Code\\treesAndGraphs\\TreesAndGraphs.csproj",
       "projectName": "TreesAndGraphs",
-      "projectPath": "c:\\Code\\treesAndGraphs\\TreesAndGraphs.csproj",
+      "projectPath": "C:\\Code\\treesAndGraphs\\TreesAndGraphs.csproj",
       "packagesPath": "C:\\Users\\elliot.hurdiss\\.nuget\\packages\\",
-      "outputPath": "c:\\Code\\treesAndGraphs\\obj\\",
+      "outputPath": "C:\\Code\\treesAndGraphs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

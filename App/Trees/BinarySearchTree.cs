@@ -1,5 +1,6 @@
 using System;
 
+[Serializable]
 public class Node
 {
     public int? value;
@@ -7,10 +8,10 @@ public class Node
     public Node right; 
 }
 
+
 public class BinarySearchTree 
 {
-
-    public BinarySearchTree(Node node, int[] values)
+    public BinarySearchTree()
     {
 
     }
@@ -38,21 +39,10 @@ public class BinarySearchTree
     {
         if(root.value == value)
             return true;
-
-        if(isLeaf(root))
-            return false;
-
-        if(value < root.value)
+        if(value < root.value && root.left != null)
             return FindValue(root.left, value);
-        
-        return FindValue(root.right, value);
-    }
-
-    public bool isLeaf(Node root)
-    {
-        if(root.left == null && root.right == null)
-            return true;
-
+        if(root.right != null)
+            return FindValue(root.right, value);      
         return false;
     }
 }
