@@ -24,4 +24,10 @@ public class BinaryTree
             this.right = new BinaryTree(values, index * 2 + 2);
     }
 
+    
+    public void Traverse(Node root)
+    {
+        
+    }
+
 }
