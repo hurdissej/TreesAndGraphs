@@ -15,6 +15,14 @@ class Solution {
         BF.Iterate();
         System.Console.WriteLine(stopwatch.ElapsedTicks);
         stopwatch.Stop();
+        stopwatch.Reset();
+
+        var DJ = new Djikstra();
+        stopwatch.Start();
+        DJ.startExperiment();
+        System.Console.WriteLine(stopwatch.ElapsedTicks);
+        stopwatch.Stop();
+        stopwatch.Reset();
         
     }
 }
