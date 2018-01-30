@@ -10,6 +10,11 @@ class Solution {
     
     static void Main(String[] args) {
         var BF = new BelmandFord();
-        BF.UpdateMemo();
+        var stopwatch = new Stopwatch();
+        stopwatch.Start();
+        BF.Iterate();
+        System.Console.WriteLine(stopwatch.ElapsedTicks);
+        stopwatch.Stop();
+        
     }
 }

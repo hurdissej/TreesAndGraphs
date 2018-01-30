@@ -44,20 +44,7 @@ namespace TreesAndGraphs.App.Graphs
                 new Graph("B", "A", 3)};
         }
 
-        public void UpdateMemo()
-        {
-            foreach(var vertex in Vertices)
-            {
-                if(!Iterate())
-                    break;
-            }
-            foreach(var row in Memo)
-            {
-                System.Console.WriteLine($"From S to {row.Key} is {row.Value}");
-            }
-        }
-        public int Counter = 0;
-        private bool Iterate()
+        public bool Iterate()
         {
             var doItAgin = false;
             foreach(var vertex in Vertices)
@@ -72,7 +59,14 @@ namespace TreesAndGraphs.App.Graphs
                     }
                 }
             }
-            return doItAgin;
+            if(doItAgin == false){
+                foreach(var row in Memo)
+                {
+                    System.Console.WriteLine($"From S to {row.Key} is {row.Value}");
+                }
+                return doItAgin;
+            }
+            return Iterate();
         }
 
 
