@@ -19,7 +19,7 @@ class Solution {
 
         var DJ = new Djikstra();
         stopwatch.Start();
-        DJ.startExperiment();
+        DJ.startExperimentRecursively();
         System.Console.WriteLine(stopwatch.ElapsedTicks);
         stopwatch.Stop();
         stopwatch.Reset();

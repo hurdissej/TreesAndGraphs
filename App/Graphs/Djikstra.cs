@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -35,9 +36,16 @@ namespace TreesAndGraphs.App.Graphs
                 };
         }
 
-        public void startExperiment()
+        // To do find a way of performing experiment Iteritively (without recursion) - according to Djikstras theory you only need to visit each node once so a for each should suffice
+
+        public void startExperimentRecursively()
         {
             Evaluate("S");
+            toString();
+        }
+
+        public void toString()
+        {
             foreach(var item in Memo)
             {
                 System.Console.WriteLine($"From S to {item.Key} is {item.shortestDistance}");
@@ -87,6 +95,5 @@ namespace TreesAndGraphs.App.Graphs
             // make it go top to bottom
             return memoRows.Aggregate((x, y) => {return x.shortestDistance < y.shortestDistance ? x : y;});
         }
-
     } 
 }
