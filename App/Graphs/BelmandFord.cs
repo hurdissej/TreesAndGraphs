@@ -3,18 +3,6 @@ using System.Linq;
 
 namespace TreesAndGraphs.App.Graphs
 {
-    public class Graph
-    {
-        public Graph(string from, string to, int weighting)
-        {
-            this.From = from;
-            this.To = to;
-            this.Weighting = weighting;
-        }
-        public string From { get; set; }
-        public string To { get; set; }
-        public int Weighting { get; set; }
-    }
     public class BelmandFord
     {
         public Dictionary<string, double> Memo { get; set; }
@@ -35,12 +23,12 @@ namespace TreesAndGraphs.App.Graphs
             };
             this.Graphs = new List<Graph> {
                 new Graph("S", "A", 4),
-                new Graph("S", "E", -5),
+                new Graph("S", "E", 5),
                 new Graph("A", "C", 6),
                 new Graph("E", "D", 8),
                 new Graph("D", "A", 10),
                 new Graph("D", "C", 3),
-                new Graph("C", "B", -2),
+                new Graph("C", "B", 2),
                 new Graph("B", "A", 3)};
         }
 

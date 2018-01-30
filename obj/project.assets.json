@@ -664,28 +664,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/hurdissej/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\elliot.hurdiss\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hurdissej/dev/TreesAndGraphs/TreesAndGraphs.csproj",
+      "projectUniqueName": "C:\\Code\\TreesAndGraphs\\TreesAndGraphs.csproj",
       "projectName": "TreesAndGraphs",
-      "projectPath": "/Users/hurdissej/dev/TreesAndGraphs/TreesAndGraphs.csproj",
-      "packagesPath": "/Users/hurdissej/.nuget/packages/",
-      "outputPath": "/Users/hurdissej/dev/TreesAndGraphs/obj/",
+      "projectPath": "C:\\Code\\TreesAndGraphs\\TreesAndGraphs.csproj",
+      "packagesPath": "C:\\Users\\elliot.hurdiss\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\TreesAndGraphs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/hurdissej/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\elliot.hurdiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
