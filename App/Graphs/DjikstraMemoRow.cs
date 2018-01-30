@@ -1,6 +1,6 @@
 
     public class DjikstraMemoRow{       
-         public DjikstraMemoRow(string key, bool IsRouteNode, bool isVisited = false)
+         public DjikstraMemoRow(string key, bool IsRouteNode = false, bool isVisited = false)
         {
             this.Key = key;
             this.shortestDistance = IsRouteNode? 0 : double.PositiveInfinity;

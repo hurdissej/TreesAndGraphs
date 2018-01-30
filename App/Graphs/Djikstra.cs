@@ -15,11 +15,11 @@ namespace TreesAndGraphs.App.Graphs
             this.Memo = new List<DjikstraMemoRow>() 
             {
                 new DjikstraMemoRow(IsRouteNode:true, key:"S"),
-                new DjikstraMemoRow(IsRouteNode:false, key:"A"),
-                new DjikstraMemoRow(IsRouteNode:false, key:"B"),
-                new DjikstraMemoRow(IsRouteNode:false, key:"C"),
-                new DjikstraMemoRow(IsRouteNode:false, key:"D"),
-                new DjikstraMemoRow(IsRouteNode:false, key:"E")
+                new DjikstraMemoRow(key:"A"),
+                new DjikstraMemoRow(key:"B"),
+                new DjikstraMemoRow(key:"C"),
+                new DjikstraMemoRow(key:"D"),
+                new DjikstraMemoRow(key:"E")
             };
             this.Graphs = new List<Graph> {
                 new Graph("S", "A", 4),
