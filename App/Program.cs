@@ -1,28 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
-using TreesAndGraphs.App.Graphs;
-
 class Solution {
-    
-    static void Main(String[] args) {
-        var BF = new BelmandFord();
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
-        BF.Iterate();
-        System.Console.WriteLine(stopwatch.ElapsedTicks);
-        stopwatch.Stop();
-        stopwatch.Reset();
 
-        var DJ = new Djikstra();
-        stopwatch.Start();
-        DJ.startExperimentRecursively();
-        System.Console.WriteLine(stopwatch.ElapsedTicks);
-        stopwatch.Stop();
-        stopwatch.Reset();
-        
+    static int[] bfs(int n, int m, int[][] edges, int s) {
+        return new int[]{1};
+    }
+
+    static void Main(String[] args) {
+        int q = Convert.ToInt32(Console.ReadLine());
+        for(int a0 = 0; a0 < q; a0++){
+            string[] tokens_n = Console.ReadLine().Split(' ');
+            int n = Convert.ToInt32(tokens_n[0]);
+            int m = Convert.ToInt32(tokens_n[1]);
+            int[][] edges = new int[m][];
+            for(int edges_i = 0; edges_i < m; edges_i++){
+               string[] edges_temp = Console.ReadLine().Split(' ');
+               edges[edges_i] = Array.ConvertAll(edges_temp,Int32.Parse);
+            }
+            int s = Convert.ToInt32(Console.ReadLine());
+            int[] result = bfs(n, m, edges, s);
+            Console.WriteLine(String.Join(" ", result));
+
+
+        }
     }
 }
