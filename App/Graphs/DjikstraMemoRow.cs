@@ -1,12 +1,12 @@
 
     public class DjikstraMemoRow{       
-         public DjikstraMemoRow(string key, bool IsRouteNode = false, bool isVisited = false)
+         public DjikstraMemoRow(int key, bool IsRouteNode = false, bool isVisited = false)
         {
             this.Key = key;
             this.shortestDistance = IsRouteNode? 0 : double.PositiveInfinity;
             this.isVisited = isVisited;
         }
-        public string Key { get; set; }
+        public int Key { get; set; }
         public double shortestDistance { get; set; }
         public bool isVisited { get; set; }
 
