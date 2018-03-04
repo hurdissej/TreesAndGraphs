@@ -11,15 +11,9 @@ public static class SortingAlgorithms {
         var more = arr.Where(x => x > arr[0]).ToArray();
         var eq = arr.Where(x => x == arr[0]);
         if(less.Length > 1)
-        {
             less = quickSort(less);
-            System.Console.WriteLine(string.Join(" ", less));
-        }
         if(more.Length > 1)
-        {
             more = quickSort(more);
-            System.Console.WriteLine(string.Join(" ", more));
-        }
         return less.Concat(eq).Concat(more).ToArray();
     }
 
